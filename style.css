@@ -124,20 +124,24 @@ section{
     
 }
 
+.home .btn {             /*-------RM----------------------*/
+    margin-top: 3rem;
+}
 .home-img img { 
     width: 23vw;
     margin-left: 1rem;
     border-radius: 2rem;
 }
 
-.social-media a { 
-    display: inline-flex;
+.social-media a {
+    display: none; 
+   /* display: inline-flex;                     CHECCK */      
     justify-content: center;
     align-items: center;
     color: var(--main-color);
     background-color: transparent;
     font-size: 2rem;
-    border: 0.2rem solid var(--main-color);
+    border: 0.2rem solid var(--main-color);   
     border-radius: 50%;
     width: 4rem;
     height: 4rem;
@@ -151,6 +155,8 @@ section{
     box-shadow: 0.7rem 0 2.5rem var(--main-color); 
 }
 
+
+
 .about{
     margin-top: -7rem ;
 }
@@ -160,6 +166,9 @@ section{
     
 }
 
+.about .btn{ /*-------------------  RM-----------*/
+    display: none; 
+}
 #menu-icon{
     font-size: 3.5rem;
     color: var(--text-color); 
