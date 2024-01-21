@@ -64,7 +64,7 @@
             <h2 class="heading">About <span>Me</span></h2>
            <!-- <h3>FrontEnd Developer</h3>--> 
             <p>Motivated by a relentless pursuit of tangible results, I am a tech enthusiast with a fervor for innovation. Armed with exceptional communication and presentation skills, I specialize in translating complex ideas into clear, actionable strategies. Proficient in Python, HTML, CSS, and adept at utilizing UI prototyping tools like Figma, I bring a dynamic skill set to the table. My commitment extends beyond technical prowess; I am dedicated to making a positive impact in diverse collaborative environments. Fueling my passion is the belief that creativity, coupled with technology, has the power to instigate meaningful change. Let's collaborate and turn visions into measurable, transformative results.</p>
-            <a href="#" class="btn" >Read More</a>
+            <a href="#" class="btn">Read More</a>
         </div>
 
     </section>
@@ -102,20 +102,22 @@
     <section class="contact" id="contact">
         <h2 class="heading">Contact Me</h2>
 
-        <form action="#">
+        <form action="https://formsubmit.co/57c143bda3de9e31f17cf1ef3150aa27" method="POST">
+
+          <!--<input type="hidden" name="access_key" value="1463cb07-db0f-4286-9554-88e1384289ad">-->  
 
             <div class="form-input">
-                <input type="text" placeholder="Full Name">
-                <input type="email" placeholder="Your email address">
+                <input name="Name" type="text" placeholder="Full Name" required>
+                <input name="email" type="email" placeholder="Your email address" required>
             </div>
 
             <div class="form-input">
-                <input type="number" placeholder="Contact Number">
-                <input type="text" placeholder="Email Subject">
+                <input name="Number" type="number" placeholder="Contact Number">
+                <input name="Subject" type="text" placeholder="Email Subject">
             </div>
 
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-            <input type="button" value="Send Message" class="btn">
+            <textarea name="Message" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
+            <input type="submit" value="Send Message" class="btn">
 
         </form>
 
