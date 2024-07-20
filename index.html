@@ -16,7 +16,7 @@
 
     <!-- header design-->
     <header class="header">
-        <a href="#" class="logo">Portfolio</a>
+        <a href="#" class="logo">Welcome</a>
         <i class='bx bx-menu' id="menu-icon"></i>
 
         <nav class="navbar">
@@ -24,7 +24,7 @@
             <a href="#home" class="active">Home</a>
             <a href="#about">About</a>
             <a href="#blog">Blog</a>
-           <!--<a href="#portfolio">Portfolio</a> --> 
+           <!--<a href="#portfolio">Portfolio</a>              CHECK -->   
             <a href="#contact">Contact</a>
         </nav>
     </header>    
@@ -32,38 +32,39 @@
     <!--home section design-->
     <section class="home" id="home">
         <div class="home-content">
-            <h3>Hello, It's me </h3> 
+            <h3>Hello, I'm </h3> 
             <h1>Zolile Tibane</h1>
             <!--<h3>I am a <span>Developer</span></h3>--> 
-            <p>Fueled by a strong motivation for tangible results, I possess exceptional communication and presentation skills. With a deep passion for technology and proficiency in Python, Java, HTML, CSS, and UI prototyping tools like Figma, I'm committed to contributing positively in diverse collaborative environments.</p>   
+            <p>I am a BSc Computer Science graduate and a dedicated tutor for Grade 8-12 Maths and Physics. With a strong motivation for tangible results and exceptional communication skills, I create engaging and effective learning experiences. My analytical background ensures that students understand and apply complex concepts. I strive to make both parents and learners feel confident and supported, providing regular updates and celebrating achievements.</p>   
             
+        
             <div class="social-media">
                 <a href="#"><i class='bx bxl-linkedin' ></i></a>
                 <a href="#"><i class='bx bxl-github'></i></a>
                 <a href="#"><i class='bx bxl-instagram-alt'></i></a> 
             </div>
            
-            <a href="cv/Zolile Tibane ___CV.pdf" class="btn">Download CV</a>
+           <!--<a href="cv/Zolile Tibane __CV.pdf" class="btn">Download CV</a>--> 
 
         </div>
 
         <div class="home-img">
-            <img src="images/Her1.jpg" alt=""> 
+            <img src="images/Her3.JPEG" alt=""> 
         </div>
 
     </section>
 
     <!--about section design-->
-    <section class="about" id="about">
+    <secti1 on class="about" id="about">
         
         <div class="about-img">
-            <img src="images/Her2.jpg" alt="">
+            <img src="images/Her1.jpg" alt="">
         </div>
 
         <div class="about-content">
             <h2 class="heading">About <span>Me</span></h2>
            <!-- <h3>FrontEnd Developer</h3>--> 
-            <p><p>Motivated by a strong drive to deliver results, I excel in communication, collaboration, and problem-solving. With a passion for technology and a unique perspective, I aim to contribute to the 4th Industrial Revolution, making a positive impact in diverse collaborative settings.</p></p>
+            <p>Driven by a passion for achieving tangible results, I am a dedicated tutor specializing in Grade 8-12 Maths and Physics. With a strong aptitude for problem-solving and critical thinking, I excel at breaking down complex concepts into easily understandable lessons. My goal is to not only improve students' academic performance but also to foster a genuine love for learning. I create a supportive and engaging learning environment, ensuring each student feels confident and motivated. Let's work together to achieve academic success and turn educational challenges into rewarding achievements.</p>
             <a href="#" class="btn">Read More</a>
         </div>
 
@@ -77,7 +78,7 @@
             <div class="blog-box"> 
                 <i class='bx bx-pen'></i>
                 <h3>Blog Posts</h3>
-                <p>Explore the dynamic world of technology with my blog, where I delve into the latest trends and innovations. From cutting-edge developments to insightful analyses, join me on a journey through the ever-evolving landscape of the tech industry.</p>
+                <p>Explore the dynamic world of learning with my blog, where I provide valuable insights and resources for Grade 8-12 Maths and Physics students. From mastering fundamental concepts to tackling complex problems, join me as I share effective study strategies, engaging lesson plans, and tips for academic success. My blog is designed to support students in their educational journey, helping them build confidence and achieve their full potential.</p>
                 <a href="#" class="btn">Read More </a>
             </div>
         </div>
@@ -102,20 +103,22 @@
     <section class="contact" id="contact">
         <h2 class="heading">Contact Me</h2>
 
-        <form action="#">
+        <form action="https://formsubmit.co/57c143bda3de9e31f17cf1ef3150aa27" method="POST">
+
+          <!--<input type="hidden" name="access_key" value="1463cb07-db0f-4286-9554-88e1384289ad">-->  
 
             <div class="form-input">
-                <input type="text" placeholder="Full Name">
-                <input type="email" placeholder="Your email address">
+                <input name="Name" type="text" placeholder="Full Name" required>
+                <input name="email" type="email" placeholder="Your email address" required>
             </div>
 
             <div class="form-input">
-                <input type="number" placeholder="Contact Number">
-                <input type="text" placeholder="Email Subject">
+                <input name="Number" type="number" placeholder="Contact Number">
+                <input name="Subject" type="text" placeholder="Email Subject">
             </div>
 
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-            <input type="button" value="Send Message" class="btn">
+            <textarea name="Message" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
+            <input type="submit" value="Send Message" class="btn">
 
         </form>
 

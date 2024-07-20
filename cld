@@ -1,0 +1,95 @@
+[1mdiff --git a/images/Her3.png b/images/Her3.png[m
+[1mdeleted file mode 100644[m
+[1mindex 15e6ef6..0000000[m
+Binary files a/images/Her3.png and /dev/null differ
+[1mdiff --git a/index.html b/index.html[m
+[1mindex 42fcd1f..68dd3b3 100644[m
+[1m--- a/index.html[m
+[1m+++ b/index.html[m
+[36m@@ -24,7 +24,7 @@[m
+             <a href="#home" class="active">Home</a>[m
+             <a href="#about">About</a>[m
+             <a href="#blog">Blog</a>[m
+[31m-           <!--<a href="#portfolio">Portfolio</a> --> [m
+[32m+[m[32m           <!--<a href="#portfolio">Portfolio</a>              CHECK -->[m[41m   [m
+             <a href="#contact">Contact</a>[m
+         </nav>[m
+     </header>    [m
+[36m@@ -48,7 +48,7 @@[m
+         </div>[m
+ [m
+         <div class="home-img">[m
+[31m-            <img src="images/Her1.jpg" alt=""> [m
+[32m+[m[32m            <img src="images/Her3.JPEG" alt="">[m[41m [m
+         </div>[m
+ [m
+     </section>[m
+[36m@@ -57,14 +57,14 @@[m
+     <section class="about" id="about">[m
+         [m
+         <div class="about-img">[m
+[31m-            <img src="images/Her2.jpg" alt="">[m
+[32m+[m[32m            <img src="images/Her1.jpg" alt="">[m
+         </div>[m
+ [m
+         <div class="about-content">[m
+             <h2 class="heading">About <span>Me</span></h2>[m
+            <!-- <h3>FrontEnd Developer</h3>--> [m
+[31m-            <p><p>Motivated by a strong drive to deliver results, I excel in communication, collaboration, and problem-solving. With a passion for technology and a unique perspective, I aim to contribute to the 4th Industrial Revolution, making a positive impact in diverse collaborative settings.</p></p>[m
+[31m-            <a href="#" class="btn">Read More</a>[m
+[32m+[m[32m            <p>Motivated by a relentless pursuit of tangible results, I am a tech enthusiast with a fervor for innovation. Armed with exceptional communication and presentation skills, I specialize in translating complex ideas into clear, actionable strategies. Proficient in Python, HTML, CSS, and adept at utilizing UI prototyping tools like Figma, I bring a dynamic skill set to the table. My commitment extends beyond technical prowess; I am dedicated to making a positive impact in diverse collaborative environments. Fueling my passion is the belief that creativity, coupled with technology, has the power to instigate meaningful change. Let's collaborate and turn visions into measurable, transformative results.</p>[m
+[32m+[m[32m            <a href="#" class="btn" >Read More</a>[m
+         </div>[m
+ [m
+     </section>[m
+[1mdiff --git a/style.css b/style.css[m
+[1mindex c245596..57865fb 100644[m
+[1m--- a/style.css[m
+[1m+++ b/style.css[m
+[36m@@ -124,20 +124,24 @@[m [msection{[m
+     [m
+ }[m
+ [m
+[32m+[m[32m.home .btn {             /*-------RM----------------------*/[m
+[32m+[m[32m    margin-top: 3rem;[m
+[32m+[m[32m}[m
+ .home-img img { [m
+     width: 23vw;[m
+     margin-left: 1rem;[m
+     border-radius: 2rem;[m
+ }[m
+ [m
+[31m-.social-media a { [m
+[31m-    display: inline-flex;[m
+[32m+[m[32m.social-media a {[m
+[32m+[m[32m    display: none;[m[41m [m
+[32m+[m[32m   /* display: inline-flex;                     CHECCK */[m[41m      [m
+     justify-content: center;[m
+     align-items: center;[m
+     color: var(--main-color);[m
+     background-color: transparent;[m
+     font-size: 2rem;[m
+[31m-    border: 0.2rem solid var(--main-color);[m
+[32m+[m[32m    border: 0.2rem solid var(--main-color);[m[41m   [m
+     border-radius: 50%;[m
+     width: 4rem;[m
+     height: 4rem;[m
+[36m@@ -151,6 +155,8 @@[m [msection{[m
+     box-shadow: 0.7rem 0 2.5rem var(--main-color); [m
+ }[m
+ [m
+[32m+[m
+[32m+[m
+ .about{[m
+     margin-top: -7rem ;[m
+ }[m
+[36m@@ -160,6 +166,9 @@[m [msection{[m
+     [m
+ }[m
+ [m
+[32m+[m[32m.about .btn{ /*-------------------  RM-----------*/[m
+[32m+[m[32m    display: none;[m[41m [m
+[32m+[m[32m}[m
+ #menu-icon{[m
+     font-size: 3.5rem;[m
+     color: var(--text-color); [m
